@@ -1,4 +1,7 @@
 
+-- task_4.sql
+-- Full description of the table 'books' in the 'alx_book_store' database
+
 SELECT 
     COLUMN_NAME AS 'Column Name',
     COLUMN_TYPE AS 'Data Type',
@@ -7,7 +10,8 @@ SELECT
     COLUMN_DEFAULT AS 'Default',
     EXTRA AS 'Extra'
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = DATABASE()
-  AND TABLE_NAME = 'books'
+WHERE TABLE_SCHEMA = 'alx_book_store'
+  AND TABLE_NAME = 'Books'
 ORDER BY ORDINAL_POSITION;
+
 
