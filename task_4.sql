@@ -1,5 +1,4 @@
--- task_4.sql
--- Print full description of the table 'books'
+
 
 SELECT 
     COLUMN_NAME AS 'Column Name',
