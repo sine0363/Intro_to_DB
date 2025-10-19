@@ -1,5 +1,3 @@
--- task_4.sql
--- Print full description of the table 'books'
 
 SELECT 
     COLUMN_NAME AS 'Column Name',
@@ -12,3 +10,4 @@ FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = DATABASE()
   AND TABLE_NAME = 'books'
 ORDER BY ORDINAL_POSITION;
+
